@@ -1,0 +1,22 @@
+{
+  "name": "Nodejs-automatizations-withchild-process-and-clusterization",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "rimraf output && mkdirp output && node src/index.js",
+    "cluster": "rimraf output && mkdirp output && node src/puppeteerCluster.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^9.0.0",
+    "puppeteer-cluster": "^0.22.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "mkdirp": "^1.0.4"
+  }
+}
